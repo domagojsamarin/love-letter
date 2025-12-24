@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sretan Božić, Ivana ❤️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-gradient-to-b from-red-900 via-red-800 to-green-900 overflow-x-hidden">
+    <!-- Snowflakes container -->
+    <div id="snowflakes" class="fixed inset-0 pointer-events-none z-0"></div>
+
+    <!-- Main content -->
+    <main class="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-8">
+        <!-- Christmas ornaments decoration -->
+        <div class="absolute top-0 left-0 right-0 flex justify-center gap-8 pt-4">
+            <div class="ornament ornament-red"></div>
+            <div class="ornament ornament-gold"></div>
+            <div class="ornament ornament-green"></div>
+        </div>
+
+        <!-- Love letter card -->
+        <div class="letter-card bg-amber-50 rounded-lg shadow-2xl max-w-md w-full mx-4 p-8 transform rotate-1 border-4 border-red-700">
+            <!-- Wax seal -->
+            <div class="wax-seal"></div>
+
+            <h1 class="text-4xl md:text-5xl text-red-700 text-center mb-6 font-script">
+                Sretan Božić
+            </h1>
+            <h2 class="text-2xl md:text-3xl text-green-800 text-center mb-8 font-script">
+                Moja Najdraža Ivana
+            </h2>
+
+            <div class="letter-content text-gray-800 font-serif space-y-4 text-lg leading-relaxed">
+                <p>
+                    Na ovaj čarobni Božić, želim da znaš koliko sam zahvalan što te imam u svom životu.
+                </p>
+                <p>
+                    Ti si moj najveći dar, moj najtopliji zagrljaj u hladnim zimskim noćima i zvijezda koja osvjetljava moj svijet.
+                </p>
+                <p>
+                    Svaki trenutak s tobom je poput otvaranja najdragocjenijeg poklona. Tvoj osmijeh, tvoj smijeh, tvoja ljubav - sve mi to znači.
+                </p>
+                <p class="text-center font-script text-2xl text-red-700 pt-4">
+                    Volim te više nego što riječi mogu izraziti.
+                </p>
+            </div>
+
+            <p class="text-right mt-8 font-script text-xl text-green-800">
+                Zauvijek tvoj ❤️
+            </p>
+        </div>
+
+        <!-- Gift button -->
+        <button id="giftBtn" class="mt-12 gift-button group">
+            <div class="gift-box">
+                <div class="gift-lid">
+                    <div class="gift-bow"></div>
+                </div>
+                <div class="gift-base"></div>
+            </div>
+            <span class="gift-text">Otvori Svoj Poklon</span>
+        </button>
+
+        <!-- Gift unwrapping overlay -->
+        <div id="giftOverlay" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 opacity-0 pointer-events-none transition-opacity duration-500">
+            <div class="gift-wrapper">
+                <!-- Wrapping paper pieces -->
+                <div class="paper paper-top-left"></div>
+                <div class="paper paper-top-right"></div>
+                <div class="paper paper-bottom-left"></div>
+                <div class="paper paper-bottom-right"></div>
+                <div class="ribbon ribbon-vertical"></div>
+                <div class="ribbon ribbon-horizontal"></div>
+                <div class="bow"></div>
+
+                <!-- Coupon reveal -->
+                <div class="coupon-container">
+                    <img id="couponImg" src="Poklon bon.jpeg" alt="Poklon Bon" class="coupon-image">
+                    <p class="close-hint">Dodirni bilo gdje za zatvaranje</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Christmas lights at bottom -->
+    <div class="christmas-lights">
+        <div class="light light-red"></div>
+        <div class="light light-yellow"></div>
+        <div class="light light-green"></div>
+        <div class="light light-blue"></div>
+        <div class="light light-red"></div>
+        <div class="light light-yellow"></div>
+        <div class="light light-green"></div>
+        <div class="light light-blue"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
