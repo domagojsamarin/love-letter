@@ -400,6 +400,7 @@
     transition-delay: 1s;
     z-index: 2;
     text-align: center;
+    width: 90vw;
 }
 
 .unwrapping .coupon-container {
@@ -408,9 +409,9 @@
 }
 
 .coupon-image {
-    max-width: 300px;
-    max-height: 400px;
-    width: auto;
+    max-width: 100%;
+    max-height: 80vh;
+    width: 100%;
     height: auto;
     border-radius: 15px;
     box-shadow:
@@ -527,8 +528,8 @@
     }
 
     .coupon-image {
-        max-width: 250px;
-        max-height: 350px;
+        max-width: 100%;
+        max-height: 70vh;
     }
 
     .ornament {
